@@ -49,16 +49,4 @@ interface DomainManagerInterface
      * @return object|null
      */
     public function delete($resource, $eventName = 'delete');
-
-    /**
-     * Bulk action (create/update/delete).
-     *
-     * @param string   $action
-     * @param object[] $resources
-     *
-     * @return object[]
-     *
-     * @throws \InvalidArgumentException
-     */
-    public function bulk($action = 'create', array $resources);
 }
